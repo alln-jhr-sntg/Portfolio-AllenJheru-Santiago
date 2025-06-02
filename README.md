@@ -84,8 +84,8 @@ my-portfolio/
 
 ---
 
-💡 Notes
+## 💡 Notes
 This project is for learning/demo purposes and doesn’t use a backend or database.
 
-📝 License
+## 📝 License
 This project is for educational purposes and free to use or modify.
