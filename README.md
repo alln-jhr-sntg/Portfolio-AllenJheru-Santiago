@@ -59,7 +59,7 @@ my-portfolio/
 
 ## 🖼 Preview
 
-![Portfolio Screenshot](images/screenshot.jpg)
+![Portfolio Screenshot](images/Screenshot.png)
 
 ---
 
