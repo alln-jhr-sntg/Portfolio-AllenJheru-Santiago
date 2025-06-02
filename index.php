@@ -1,32 +1,50 @@
-<?php
-$name = "Allen Jheru Santiago";
-$age = 21;
-$university = "AMA University Quezon City";
-$hobbies = ["Reading Novels", "Watching Nature Documentaries", "Gaming"];
-$favorites = [
-    "Favorite Color" => "Green",
-    "Favorite Dessert" => "Pudding",
-    "Favorite Pastime" => "Being alone"
-];
-
-$intro = "Hello, my name is " . $name . ". I am " . $age . " years old and an aspiring programmer.";
-
+<?php 
+    if (file_exists('includes/config.php')) {
+        include_once 'includes/config.php';
+    } else {
+        echo "<p>Error: 'includes/config.php' not found.</p>";
+    }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio - <?php echo $name; ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - <?php echo htmlspecialchars($name); ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
 </head>
 <body>
-    <?php include 'includes/header.php'; ?>
-    <?php include 'includes/nav.php'; ?>
-    <?php include 'includes/main.php'; ?>   
-    <?php include 'includes/footer.php'; ?>
+    <?php 
+    if (file_exists('includes/header.php')) {
+        include_once 'includes/header.php'; 
+    } else {
+        echo "<p>Error: 'includes/header.php' not found.</p>";
+    }
+    ?>
+    <?php 
+    if (file_exists('includes/nav.php')) {
+        include_once 'includes/nav.php'; 
+    } else {
+        echo "<p>Error: 'includes/nav.php' not found.</p>";
+    }
+    ?>
+    <?php 
+    if (file_exists('includes/main.php')) {
+        include_once 'includes/main.php'; 
+    } else {
+        echo "<p>Error: 'includes/main.php' not found.</p>";
+    }
+    ?>
+    <?php 
+    if (file_exists('includes/footer.php')) {
+        include_once 'includes/footer.php'; 
+    } else {
+        echo "<p>Error: 'includes/footer.php' not found.</p>";
+    }
+    ?>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
