@@ -25,25 +25,6 @@ Welcome to my simple personal portfolio website built using **basic PHP**, **HTM
 
 ---
 
-## 📁 Project Structure
-
-my-portfolio/
-├── index.php # Main entry file
-├── css/
-│ └── style.css # Stylesheet
-├── js/
-│ └── script.js # JavaScript for smooth scroll & log
-├── images/
-│ └── profile.jpg # profile image
-├── includes/ # Reusable PHP components
-│ ├── header.php
-│ ├── nav.php
-│ ├── main.php
-│ ├── footer.php
-└── README.md # This file
-
----
-
 ## 🧪 PHP Concepts Demonstrated
 
 - ✅ Basic PHP syntax
