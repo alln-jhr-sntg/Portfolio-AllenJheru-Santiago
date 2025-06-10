@@ -40,5 +40,5 @@ $skills = [
 $weight = 58.7; // in kg
 $height = 1.69; // in meters
 $isAvailable = true; // boolean example
-
+$Name = "\$name is different from \$Name"; // Variable with different case
 ?>
